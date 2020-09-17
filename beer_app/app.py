@@ -25,8 +25,8 @@ while True:
         temperature = dht.temperature
         
         if humidity is not None and temperature is not None:
-            print(humidity)
-            print(temperature)
+            print("Humidity: " + str(humidity) +"%")
+            print("Temp (C): " + str(temperature))
             log_values(DEVICE, SENSOR_LOCATION_NAME, temperature, humidity)
         else:
             log_values(DEVICE, SENSOR_LOCATION_NAME, -999, -999)
