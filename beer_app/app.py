@@ -6,10 +6,10 @@ import board
 import time
 import adafruit_dht
 
-# Add front end manipulation of name, sleep time, etc
+# TODO: Add front end manipulation of name, sleep time, etc
 SENSOR_LOCATION_NAME = "Potter_Closet"
 DEVICE = "DHT22"
-SLEEP_TIME = 2
+SLEEP_TIME = 60 * 10
 dht = adafruit_dht.DHT22(board.D4)
 
 def log_values(device, location, temp, hum):
